@@ -3,18 +3,23 @@ input {
 }
 
 .superInput {
-    border: 2px lime solid;
+    padding: 5px;
+    border: 1px solid var(--dark-color);
     background: none;
     margin-bottom: 22px;
+    border-radius: 5px;
+}
+
+.superInput:focus {
+    outline: none;
 }
 
 .errorInput {
-    border: 2px lime solid;
-    background: red;
+    border: 1px solid var(--warn-color);
     margin-bottom: 0;
 }
 
 .error {
-    color: red;
+    color: var(--warn-color);
 }
 

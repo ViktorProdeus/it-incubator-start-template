@@ -3,6 +3,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    color: black;
-    background: darkcyan;
+    color: var(--dark-color);
+    background: var(--light-color);
+    border-bottom: 1px solid var(--dark-color);
 }

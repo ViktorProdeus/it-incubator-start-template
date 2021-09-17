@@ -1,11 +1,12 @@
 .checkbox {
     position: relative;
     appearance: none;
-    border: 1px red solid;
-    width: 10px;
-    height: 10px;
+    border: 1px solid var(--dark-color);
+    width: 15px;
+    height: 15px;
     top: 3px;
     cursor: pointer;
+    border-radius: 3px;
 }
 .labelClassName {
     display: flex;
@@ -15,23 +16,25 @@
 .spanClassName {
     margin-left: 10px;
     cursor: pointer;
-    color: red;
+    color: var(--dark-color);
     transition: color 0.3s linear;
+    text-decoration: underline;
 }
 
 .checkbox:checked {
     appearance: none;
-    border-color: lime;
+    border-color: var(--dark-color);
 
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
 
-    background-image: url("https://img1.freepng.ru/20180208/lew/kisspng-check-mark-x-mark-clip-art-check-marks-5a7c0970394fe9.8780805115180783202348.jpg");
+    background-image: url("/src/assets/images/check-solid.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .checkbox:checked ~ .spanClassName {
-    color: green;
+    color: var(--dark-color);
+    text-decoration: none;
 }

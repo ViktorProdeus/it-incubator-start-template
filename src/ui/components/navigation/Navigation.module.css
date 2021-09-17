@@ -8,3 +8,12 @@
 .navItem {
     padding: 5px;
 }
+
+.link {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.activeLink {
+    text-decoration: underline;
+}
