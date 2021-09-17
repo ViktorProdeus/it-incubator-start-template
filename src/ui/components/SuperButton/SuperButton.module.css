@@ -1,0 +1,28 @@
+.default {
+    font-weight: bold;
+    padding: 10px 25px;
+    border: 2px solid lime;
+    border-radius: 5px;
+    background: blue;
+    color: white;
+    text-transform: uppercase;
+    margin: 5px;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.red {
+    background: red;
+}
+
+.default:disabled {
+    color: rgba(255,255,255, 0.5);
+    background: lightgray;
+    cursor: not-allowed;
+    border: 2px solid darkgray;
+}
+
+.default:active {
+    opacity: 0.6;
+    cursor: pointer;
+}

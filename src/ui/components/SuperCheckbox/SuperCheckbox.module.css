@@ -1,0 +1,37 @@
+.checkbox {
+    position: relative;
+    appearance: none;
+    border: 1px red solid;
+    width: 10px;
+    height: 10px;
+    top: 3px;
+    cursor: pointer;
+}
+.labelClassName {
+    display: flex;
+    align-items: center;
+}
+
+.spanClassName {
+    margin-left: 10px;
+    cursor: pointer;
+    color: red;
+    transition: color 0.3s linear;
+}
+
+.checkbox:checked {
+    appearance: none;
+    border-color: lime;
+
+    width: 10px;
+    height: 10px;
+
+    background-image: url("https://img1.freepng.ru/20180208/lew/kisspng-check-mark-x-mark-clip-art-check-marks-5a7c0970394fe9.8780805115180783202348.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.checkbox:checked ~ .spanClassName {
+    color: green;
+}

@@ -1,0 +1,22 @@
+.errorMessage {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: #212121;
+    background-color: #e74c4c;
+}
+
+.errorMessage span,
+.link {
+    text-transform: initial;
+}
+
+.link {
+    color: gold;
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: none;
+}
