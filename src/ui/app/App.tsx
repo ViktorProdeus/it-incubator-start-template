@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {Provider} from "react-redux";
 import {HashRouter} from "react-router-dom";
-import store from "../bll/store";
+import store from "../../bll/store";
 import Main from "./main/Main";
 
 function App() {

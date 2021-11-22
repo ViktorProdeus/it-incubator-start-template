@@ -1,12 +1,12 @@
 import React from 'react'
 
-const SetPass = () => (
+const SetNewPass = () => (
     <>
-        <h1>SetPass</h1>
+        <h1>SetNewPassword</h1>
     </>
 );
 
-export default SetPass
+export default SetNewPass
 
 // сделайте по аналогии пустые страницы джун и джун+
 // туда будут добавляться следующие дз
