@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/it-incubator-start-template/static/css/main.79cd50b4.chunk.css",
-    "main.js": "/it-incubator-start-template/static/js/main.ae436ea2.chunk.js",
-    "main.js.map": "/it-incubator-start-template/static/js/main.ae436ea2.chunk.js.map",
-    "runtime-main.js": "/it-incubator-start-template/static/js/runtime-main.4a50af3c.js",
-    "runtime-main.js.map": "/it-incubator-start-template/static/js/runtime-main.4a50af3c.js.map",
+    "main.css": "/it-incubator-start-template/static/css/main.21a7cc25.chunk.css",
+    "main.js": "/it-incubator-start-template/static/js/main.8a5bbc90.chunk.js",
+    "main.js.map": "/it-incubator-start-template/static/js/main.8a5bbc90.chunk.js.map",
+    "runtime-main.js": "/it-incubator-start-template/static/js/runtime-main.694bcd8f.js",
+    "runtime-main.js.map": "/it-incubator-start-template/static/js/runtime-main.694bcd8f.js.map",
     "static/css/2.679831fc.chunk.css": "/it-incubator-start-template/static/css/2.679831fc.chunk.css",
-    "static/js/2.2a467281.chunk.js": "/it-incubator-start-template/static/js/2.2a467281.chunk.js",
-    "static/js/2.2a467281.chunk.js.map": "/it-incubator-start-template/static/js/2.2a467281.chunk.js.map",
-    "static/js/3.a28ea239.chunk.js": "/it-incubator-start-template/static/js/3.a28ea239.chunk.js",
-    "static/js/3.a28ea239.chunk.js.map": "/it-incubator-start-template/static/js/3.a28ea239.chunk.js.map",
+    "static/js/2.1e306a33.chunk.js": "/it-incubator-start-template/static/js/2.1e306a33.chunk.js",
+    "static/js/2.1e306a33.chunk.js.map": "/it-incubator-start-template/static/js/2.1e306a33.chunk.js.map",
+    "static/js/3.9406787d.chunk.js": "/it-incubator-start-template/static/js/3.9406787d.chunk.js",
+    "static/js/3.9406787d.chunk.js.map": "/it-incubator-start-template/static/js/3.9406787d.chunk.js.map",
     "index.html": "/it-incubator-start-template/index.html",
     "static/css/2.679831fc.chunk.css.map": "/it-incubator-start-template/static/css/2.679831fc.chunk.css.map",
-    "static/css/main.79cd50b4.chunk.css.map": "/it-incubator-start-template/static/css/main.79cd50b4.chunk.css.map",
-    "static/js/2.2a467281.chunk.js.LICENSE.txt": "/it-incubator-start-template/static/js/2.2a467281.chunk.js.LICENSE.txt",
+    "static/css/main.21a7cc25.chunk.css.map": "/it-incubator-start-template/static/css/main.21a7cc25.chunk.css.map",
+    "static/js/2.1e306a33.chunk.js.LICENSE.txt": "/it-incubator-start-template/static/js/2.1e306a33.chunk.js.LICENSE.txt",
     "static/media/SuperCheckbox.module.css": "/it-incubator-start-template/static/media/check-solid.5dcf9568.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4a50af3c.js",
+    "static/js/runtime-main.694bcd8f.js",
     "static/css/2.679831fc.chunk.css",
-    "static/js/2.2a467281.chunk.js",
-    "static/css/main.79cd50b4.chunk.css",
-    "static/js/main.ae436ea2.chunk.js"
+    "static/js/2.1e306a33.chunk.js",
+    "static/css/main.21a7cc25.chunk.css",
+    "static/js/main.8a5bbc90.chunk.js"
   ]
 }
