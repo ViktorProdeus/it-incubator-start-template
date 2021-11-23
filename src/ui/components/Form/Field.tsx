@@ -1,9 +1,9 @@
-import styles from "../../pages/login/Login.module.css";
+import styles from "./Form.module.css";
 import React from "react";
 
 export const Field = (props: {title?: string, type: string, name: string, formik: any }) => {
     return (
-        <div className={styles.fieldWrap}>
+        <div className={props.type === "checkbox" ? `${styles.fieldWrap} ${styles.withCheckbox}` : styles.fieldWrap}>
             <label>
                 {props.type !== "checkbox" && <span>{props.title}</span>}
                 {

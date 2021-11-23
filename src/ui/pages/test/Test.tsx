@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import styles from "./Test.module.css";
 import SuperButton from "../../components/SuperButton/SuperButton";
 import SuperCheckbox from "../../components/SuperCheckbox/SuperCheckbox";
@@ -29,31 +29,31 @@ function Test() {
     }
 
     const getLoginResponse = async () => {
-        tryCatch(authAPI.login("nya-admn@nya.nya", "1qazxcvBG", true));
+        await tryCatch(authAPI.login("nya-admn@nya.nya", "1qazxcvBG", true));
     }
 
     const getRegistrationResponse = async () => {
-        tryCatch(authAPI.registration("nya-admin@nya2000.nya", "1qazxcBG"));
+        await tryCatch(authAPI.registration("nya-admin@nya2000.nya", "1qazxcBG"));
     }
 
     const getForgotResponse = async () => {
-        tryCatch(authAPI.forgot("blablsa20@nya.nya"));
+        await tryCatch(authAPI.forgot("blablsa20@nya.nya"));
     }
 
     const getMeResponse = async () => {
-        tryCatch(authAPI.getMe());
+        await tryCatch(authAPI.getMe());
     }
 
     const getUpdateUserResponse = async () => {
-        tryCatch(authAPI.updateUser("new name", "https//avatar-url.img"));
+        await tryCatch(authAPI.updateUser("new name", "https//avatar-url.img"));
     }
 
     const getLogoutResponse = async () => {
-        tryCatch(authAPI.logOut());
+        await tryCatch(authAPI.logOut());
     }
 
     const getNewPasswordResponse = async () => {
-        tryCatch(authAPI.setPassword("token", "password"));
+        await tryCatch(authAPI.setPassword("token", "password"));
     }
 
     return (
@@ -96,10 +96,10 @@ export function ResponseButtons(props: any) {
     ];
 
     return (
-        <Fragment>
+        <div className={styles.ResponseButtons} >
             <h3>ResponseButtons: </h3>
             {responseButtons.map(btn => <SuperButton key={btn.id} onClick={btn.callBack}>{btn.name}</SuperButton>)}
-        </Fragment>
+        </div>
     );
 }
 

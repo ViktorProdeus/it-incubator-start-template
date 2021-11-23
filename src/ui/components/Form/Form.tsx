@@ -1,16 +1,19 @@
 import { Field } from "./Field";
 import SuperButton from "../SuperButton/SuperButton";
-import styles from "../../pages/login/Login.module.css";
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { PATH } from "../../routes/Routes";
+import styles from "./Form.module.css";
 
 type FormType = {
     title: string
     formik: any
     fields: { type: string, title?: string, name: string } []
+    buttonName: string
 }
 const Form = (props: FormType) => {
     return (
-        <form noValidate onSubmit={props.formik.handleSubmit}>
+        <form className={styles.form} noValidate onSubmit={props.formik.handleSubmit}>
             <h2>{props.title}</h2>
             {
                 props.fields
@@ -26,9 +29,24 @@ const Form = (props: FormType) => {
                     })
             }
 
+
+            {props.title === "Sign in" && <div className={styles.link}>
+                <NavLink to={PATH.FORGOT}>Forgot</NavLink>
+            </div>}
+
+            {props.title !== "Sign in" && <><br/><br/></>}
             <SuperButton className={styles.btn} type="submit" disabled={props.formik.isSubmitting}>
-                Submit
+                {props.buttonName}
             </SuperButton>
+
+            {props.title === "Sign in" && <div className={styles.link}>
+                <NavLink to={PATH.REGISTRATION}>Sign Up</NavLink>
+            </div>}
+
+            {props.title !== "Sign in" && <div className={styles.link}>
+                <NavLink to={PATH.LOGIN}>Sign in</NavLink>
+            </div>}
+
         </form>
     );
 };

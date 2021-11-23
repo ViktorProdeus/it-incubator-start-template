@@ -2,22 +2,22 @@ import React from 'react';
 import styles from './Login.module.css';
 import { useFormik } from "formik";
 import Form from "../../components/Form/Form";
-import { fields, initialValues, validationSchema } from "./LoginFormikData";
+import { fieldsLogin, initialValuesLogin, validationSchemaLogin } from "./LoginFormikData";
 
 
 const Login = () => {
 
-    const formik = useFormik({
-        initialValues,
-        validationSchema,
+    const formikLogin = useFormik({
+        initialValues: initialValuesLogin,
+        validationSchema: validationSchemaLogin,
 
         onSubmit: (values) => {
-            console.log(formik.values.checkbox)
+            console.log(formikLogin.values.checkbox)
             console.log(values.password)
             console.log(values.email)
             alert('thank for you message');
-            formik.setSubmitting(false);
-            formik.resetForm();
+            formikLogin.setSubmitting(false);
+            formikLogin.resetForm();
         }
     });
 
@@ -25,9 +25,10 @@ const Login = () => {
         <div className={styles.wrapper}>
 
             <Form
-                title={"Login"}
-                formik={formik}
-                fields={fields}
+                title={"Sign in"}
+                formik={formikLogin}
+                fields={fieldsLogin}
+                buttonName={"Login"}
             />
 
         </div>
